@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <!-- vincular a boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--vincular con css -->
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!--vincular con iconos -->
+    <link rel="stylesheet" href="iconos/iconos.css.css">
+    <link rel="stylesheet" href="icono.css.css">
+    <!--vincular con javascript -->
+    <script type="text/javascript" src="js/clase7.js"></script>
+    <!--Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale1">
+
+     <!--Tipografia google -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <div id="marca">
+            <h1>Remeras Musicales</h1>
+        </div>
+        <nav id='hamburgesa'>
+            <a onclick="hamburguesa ()"><span class="icon-menu3"></span></a></nav>
+        <nav id="menu" style="display: block;">
+            <ul>
+            <li><a href="#apartado1">Bienvenidos</a></li><li><a href="#apartado2">Categorias</a></li><li><a href="#apartado3">Musica es Identidad</a></li><li><a href="#apartado4">Tu pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h3>... Bienvenidos ...</h3>
+    <section id="apartado1">
+        <div id="tituloDelApartado">
+            <h2>Tienda online de remeras con diseños referentes al mundo de la música</h2>
+         </div>
+         <div id="textoBienvenida">
+            <p>Si llegastes hasta acá quiere decir que <b>ERES UNO DE LOS NUESTROS</b>. No quieres en tu remera el logotipo de un cocodrilo ni el de un caballo jugando al polo, y tampoco quieres una remera sin onda ni sentido. Buscas aquellas que <b>te definan, con personalidad propia e impactantes</b>. Y que mejor forma de hacerlo que llevando tu banda de musica favorita a todos lados.</p>
+            </div>
+            <!--para poner el formulario de java-->
+            <script type="text/javascript">
+            document.write ('<h2>'+ nombre +' entonces..¿Te gustan las remeras con diseños de ' + musica + '? ESTE ES TU LUGAR </h2>' )
+            </script>
+         <div id='foto1'>
+
+          <img 
+          src="images/remera-bienvenida.jpg " class="foto-bienvenida, ajuste-img"
+onmouseover="this.src='images/foto1.png'"
+onmouseout="this.src='images/remera-bienvenida.jpg'"
+/>
+
+<!--
+            <img src="images/remera-bienvenida.jpg" class="foto-bienvenida, ajuste-img">--> 
+        </div>
+          <div id='textoDeFoto1'> 
+                <p> Si no encontrabas la remera de tus sueños... es porque no nos conocías. Pasa y disfruta del espectáculo. Desde las piezas más clásicas hasta lo último en remeras musicales. Tú solo elige qué quieres ponerte hoy, que<strong> nosotros hacemos el resto</strong>. </p>
+                <p> Ahora ya tienes en Internet la tienda online en la que encontrarás la mejor selección de camisetas de bandas, artistas, elementos de la musica, entre tantas otras, de todo internet.</p>
+                <p> Nuestra pasión va mucho más allá de la tienda, somos un movimiento en defensa de la belleza y la musica, en nuestro blog encontrarás artículos que exploran los confines, la historia y cualquier temática relacionada con el mundo de  🎶, como el apasionante mundo de los tatuajes, de la música asociada a esta simbología, de la libertad que representan y de su misticismo chamánico. Bienvenido a nuestra comunidad, disfruta de todos los productos que aquí encontrarás y complementa tu vida acorde contigo. Y por supuesto, no dudes en contactar con nosotros para cualquier tipo de información o pregunta que quieras hacer, estaremos encantados de responderte. Y no dejes de solicitar tu remera personalizada.</p>
+                <p>  <strong><em>         Bienvenido a RemerasMusicales.com!!</em></strong></p>
+            </div>
+    </section>
+    <h3>... Categorias ...</h3>
+    <section id="apartado2">
+        <h2>Talles </h2>
+        <div id="galeria1" >
+        <div >
+          <a onmouseover="pasar('fotog1')" ><img id="fotog1" src="images/talles.xs.jpg" class="ajuste-img" style="display:none;"></div>
+            <h5>EXTRA-SMALL</h5>
+            <script type="text/javascript">
+            
+         if ( talle == 'XS'|| talle == 'xs'){
+         document.write ('<h4> Tu sección</h4>')}
+
+            </script></a>
+        </div>
+        <div id="galeria2">
+            <div >
+                <a onmouseover="pasar('fotog2')" ><img id="fotog2" src="images/talles.s.jpeg" class="ajuste-img" style="display:none;"></div>
+            <h5>SMALL</h5>
+            <script type="text/javascript">
+            
+            if ( talle== 'S' || talle == 's'){
+            document.write ('<h4> Tu sección</h4>')}
+   
+               </script></a>
+            </div>
+        <div id="galeria3">
+            <div >
+                <a onmouseover="pasar('fotog3')" ><img id="fotog3" src="images/talles.m.jpeg" class="ajuste-img" style="display:none;"></div>
+            <h5>MEDIUM</h5>
+            <script type="text/javascript">
+            
+                if ( talle == 'M'|| talle == 'm'){
+                document.write ('<h4> Tu sección </h4>')}
+       
+                   </script></a>
+        </div>
+        <div id="galeria4">
+            <div >
+                <a onmouseover="pasar('fotog4')" ><img id="fotog4" src="images/talles.l.jpeg" class="ajuste-img" style="display:none;"></div>
+            <h5>LARGE</h5>
+            <script type="text/javascript">
+            
+                if ( talle == 'L'|| talle == 'l'){
+                document.write ('<h4> Tu sección</h4>')}
+       
+                   </script></a>
+        </div>
+        <div id="galeria5">
+            <div >
+                <a onmouseover="pasar('fotog5')" ><img id="fotog5" src="images/talles.xl.jpg" class="ajuste-img" style="display:none;"></div>
+            <h5>EXTRA-LARGE</h5>
+            <script type="text/javascript">
+            
+                if ( talle == 'XL'|| talle == 'xl'){
+                document.write ('<h4> Tu sección</h4>')}
+       
+                   </script></a>
+        </div>
+        <div id="espacio"></div>
+        <h2>Tipos de mangas</h2>
+        <div id="galeria6"class="ejemplo"><a onmouseover="cambiar('galeria6')" onmouseout="vuelvo('galeria6')" >
+          <h5>CORTA</h5>
+          <img src="images/cortaF.png" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=80;this.height=80;" width="80" height="80" />
+          <br>
+                <script type="text/javascript">
+                
+                    if ( mangas == 'Corta'|| mangas == 'corta'){
+                    document.write ( nombre + ' aquí encontrá tus remeras de ' + musica + '. Y la romperás con esa O N D A.')}
+                </script></a>
+        </div>
+        <div id="galeria7" class="ejemplo"><a onmouseover="cambiar('galeria7')" onmouseout="vuelvo('galeria7')">
+          <h5>LARGA</h5>
+          <img src="images/largaF.png" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=80;this.height=80;" width="80" height="80" />
+          <br>
+                <script type="text/javascript">
+                
+                    if ( mangas == 'Larga'|| mangas == 'larga'){
+                    document.write ( nombre +' aquí encontrá tus remeras de '+  musica + '. Y la romperás con esa O N D A.')}
+                </script></a>
+        </div>
+    </section> 
+    <br>
+    <h2>Telas </h2>
+    <div class="container-fluid" id="contenedor_contacto">
+      <div class="row" id="mod_contacto1">
+          <div class="col-lg-6 col-md-4" id="col_cont1">
+              <div class="card" style="width: 18rem;">
+                  <img src="images/tu.png" class="card-img-top" alt="...">
+                  <div class="card-body formulario">
+                    <h5 class="card-title letraFormulario">Tu estilo, tu remera!</h5>
+                    <p class="card-text">Si queres personalizar tu camiseta, no dudes en escribirnos.</p>
+                    <a href="#caja3" class="btn btn-dark"> IR AHORA MISMO</a>
+                  </div>
+                </div>
+          </div>
+      </div>
+  </div>
+  <br>
+  
+  <div class="accordion acordion " id="accordionExample">
+    <div class="accordion-item formulario ">
+      <h5 class="card-title letraFormulario">Tu tela</h5>
+      <h2 class="accordion-header acordion" id="headingOne">
+        <button class="accordion-button acordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          REMERAS DE ALGODÓN RINGSPUN
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show acordion" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body acordion">
+          <strong>La favorita!!</strong> 
+          Es un algodón ligero y fresco. Aportan un acabado más cuidado y delicado.
+          Sus fibras son más fuertes por lo que tu prenda durará más tiempo.
+          Perfecto para los que buscan un material de moda y de gran calidad.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item acordion">
+      <h2 class="accordion-header acordion" id="headingTwo">
+        <button class="accordion-button collapsed acordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          REMERAS DE ALGODÓN PRE-ENCOGIDO
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse acordion" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body acordion">
+    Este tipo de algodón te asegura que no se encogerá cuando se lave.
+    Se trata de una fibra más gruesa, más pesada y de mayor gramage.
+    Es más barato que otros tipos de camisetas de algodón.
+    <strong>Ideal para despedidas, eventos, o tengan un presupuesto concreto.</strong>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item acordion">
+      <h2 class="accordion-header acordion" id="headingThree">
+        <button class="accordion-button collapsed acordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          REMERAS DE POLIÉSTER
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse acordion" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body acordion">
+          
+          Tejido absorbente, facilita la evaporación y eliminación del sudor.
+          Prácticamente no se encoge.
+          <strong>Es más resistente y duradero que el algodón.</strong>
+          Es perfecto para eventos deportivos y entrenamientos.
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+    <h3>... Musica es Identidad ...</h3>
+    <section id="apartado3">
+        <div id="titulo2">
+            <h2>La tienda para quienes tienen mucha onda</h2>
+        </div>
+        <div id="titulo3" class="mostrar">
+            <h2 class="mostrar">Estilo musical -  vs  - personalidad</h2>
+        </div>
+        <div id="texto2">
+            <p>Las remeras con bandas y artistas son algo más que un símbolo o un adorno, son una declaración de ideales. Te identifican, definen, y por sobre todo <b>te hacen lucir genial</b>. Ahora ya tienes en la web a la tienda online en la que encontrarás la mejor selección de remeras del mundo de la musica.</p>
+            <p>La música es un lenguaje universal y del alma que es capaz de despertar emociones, sensaciones y recuerdos únicos. La música puede ser de cualquier cultura o país y en cualquier idioma; pero, aún así es capaz de ponernos alegres o tristes o de hacernos llorar o bailar.</p>
+            <p>La música hace esta magia en los seres humanos desde tiempos inmemoriales. En todas las épocas y civilizaciones ha existido esta forma tan particular de expresión, tan rica en estilos y géneros.</p>
+        </div>
+        <div id="titulo3" class="ocultar">
+            <h2 class="ocultar">Estilo musical-personalidad</h2>
+        </div>
+        <div id="texto3">
+        <p>    Los amantes de la música blues, jazz, soul tienen alta autoestima, son creativos, amables y extrovertidos.</p>
+         <p>Aunque parezcan muy diferentes, también son creativos a amables aquellos que prefieren el rap y la ópera.</p>
+         <p>Quienes prefieren la música clásica son bastante similares a los anteriores, con la excepción de que son introvertidos.</p>
+         <p>Los amantes de la música country son trabajadores y extrovertidos.</p>
+         <p>Los que disfrutan con el reggae fueron reportados como algo vagos, y también creativos, amables, extrovertidos y con alta autoestima.</p>
+          <p>Los que gustan de escuchar música Dance son creativos y extrovertidos, pero no demasiado amables.</p>
+         <p>Los seguidores de la música Rock y Heavy Metal tienen autoestima baja, son creativos, no muy trabajadores, introvertidos y amables.</p>
+        </div>
+        <div id="vistaGaleria">
+            <br><br><br><br><br>
+            <div id="titVista"><strong> -<em>A l g u n o s ·  d e ·  l o s  ·   m o d e l o s </em>- </strong></div><br><br>
+        <div id="vistas" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/fot1.png" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="images/fot2.png" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="images/fot3.png" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="images/fot4.png" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="images/fot5.png" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="images/fot6.png" class="img-fluid">
+              </div>
+              <div class="carousel-item">
+                <img src="images/fot7.jpeg" class="img-fluid">
+              </div>
+            </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#vistas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#vistas" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </section>
+    <section id="apartado4">
+        <div id="nuevaSec">
+            <h2>Tu pedido</h2>
+            <div class="container-fluid" id="nuevaCaja">
+                <div class="row" id="caja1">
+                    <div class="col-lg-10 offset-lg-1 col-sm-12" id="c1">
+                        <!--form-->
+                        <div class="row g-3">
+                            <div class="col">
+                              <form>
+                              <input type="text" class="form-control letraForm1" placeholder="Nombre">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control letraForm1" placeholder="Apellido" >
+                            </div>
+                          </form>
+                          </div>
+                          <!--finf-->
+                    </div>
+                </div>
+                <div class="row" id="caja2">
+                    <div class="col-lg-5 col-sm-12" id="c2">
+                        <!-- formulario -->
+            
+                        <div class="form-check form2">
+                          <form>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                MARCA TUS PREFERIDOS
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Talle XS
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Talle S
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Talle M
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Talle L
+                            </label>
+                          </div>
+                          <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Talle XL
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Color fondo (definir en mensaje)
+                            </label>
+                          </form>
+                          </div>
+                          <!-- formulario fin -->
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-sm-12" id="c22">
+                        <!-- formulario -->
+                        <div class="form-check form22">
+                          <form>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Manga Corta
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Manga Larga
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Algodón Ringspun
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Algodón Pre-encogido
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Poliéster
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                En base a tu selección (ofrecemos 3 modelos) 
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Hacemos el modelo que nos envíes
+                            </label>
+                          </form>
+                          </div>
+                        
+                          <!-- formulario fin -->
+                    </div>
+                </div>
+                <div class="row" id="caja3">
+                    <div class="col-lg-12 col-sm-12" id="c3">
+                        <!--f-->
+                        <div class="mb-3 form22 form3">
+                          <form>
+                            <label for="exampleFormControlInput1" class="form-label">Email </label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tunombre@ejemplo.com">
+                          </div>
+                          <div class="mb-3 form3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario · Hacenos tu pedido</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                            <div class="mb-3">
+                              <label for="formFileMultiple" class="form-label">Envianos tus modelos que nosotros los hacemos </label>
+                              
+                              <input class="form-control" type="file" id="formFileMultiple" multiple> 
+                             
+                            </div>
+
+                            <div class="col-12 form2 ">
+                                <button class="btn btn-primary boton" type="submit">Enviando</button>
+                              </div>
+                            </form>
+                          </div>
+                          <!--ff-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <!-- <img src="images/instagram-logoil.png" class="foto-instagram"> -->
+       <div class="foto-instagram">
+        <span class="icon-instagram" ></span> 
+       </div>  
+        <script type="text/javascript"> 
+            
+            if ( redes != 'No' && redes != 'no'){
+            document.write ('<h5>Seguinos y encontrá todo sobre ♫ '+ musica+' en nuestro instagram  </h5>')}
+            
+           
+               </script>
+               
+                   
+    </footer>
+    <p> Aviso Legal · Política de Privacidad · Politica de Cookies</p>
+    <script type="text/javascript" src="js/dom.js"></script>
+    <!--js propio boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
